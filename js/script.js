@@ -1,5 +1,24 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
-// Created by: Mr. Coxall
+// Created by: Mr. Coxall updated by Anna S.
 // Created on: Sep 2020
 // This file contains the JS functions for index.html
+
+"use strict"
+
+function calculate() {
+
+  // input
+  let counter = 0
+  let answer = 0
+  const firstNumber = parseFloat(document.getElementById('numberone').value)
+  const secondNumber = parseFloat(document.getElementById('numbertwo').value)
+
+  // process
+  while (counter < secondNumber) {
+    counter = counter + 1
+    answer = answer + firstNumber
+  }
+  // output
+  document.getElementById('answer').innerHTML = 'Your product is: ' + answer + '.'
+}
